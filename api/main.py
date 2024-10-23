@@ -20,13 +20,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# # MODEL = tf.keras.models.load_model("../model/model_100epo_10val_4convLay_92acc10Epo_88scoreAcc", compile=False)
-# MODEL = tf.keras.models.load_model("../model/model\plant_disease_prediction_model_38_Class.h5", compile=False)
-
-# CLASS_NAMES = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy','Unknown']
-
 # Load model
-MODEL = tf.keras.models.load_model("../model/model_with_ood.h5", compile=False)
+MODEL = tf.keras.models.load_model("../model/model_cnn.keras", compile=False)
 
 DISEASE_CLASSES = ['healthy', 'diseased1', 'diseased2'] 
 CLASS_NAMES = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy', 'Unknown']
